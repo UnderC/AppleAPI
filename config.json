@@ -1,0 +1,4 @@
+{
+  "PORT": 80,
+  "IPSW": "https://api.ipsw.me/v2.1/firmwares.json"
+}

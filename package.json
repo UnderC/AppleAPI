@@ -1,5 +1,5 @@
 {
-  "name": "ipswAPI",
+  "name": "appleapi",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,8 +8,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
+    "axios": "^0.19.2",
     "koa": "^2.13.0",
     "koa-router": "^9.1.0"
   }
