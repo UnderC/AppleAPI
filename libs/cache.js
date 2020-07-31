@@ -20,6 +20,7 @@ class IPSWCacher {
   }
 
   startInterval() {
+    if (isNaN(this.interval)) throw new Error('Number 타입의 interval이 제공되지 않았습니다.')
     setInterval(this.cache.bind(this), this.interval)
   }
 
@@ -34,7 +35,7 @@ class IPSWCacher {
   }
 
   get (identifier) {
-    return this.data.find(device => device.identifiers.includes(identifier))
+    return this.data.find(device => device.identifiers.includes(identifier)).get()
   }
 
   get avaliable () {
